@@ -7,20 +7,117 @@
   height: 40vmin;
   pointer-events: none;
 }
+.header {
+  height: 30px;
+  background-color: rgb(17, 141, 172);
+  color: white;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-grow: 2; */
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.links {
+  display: flex;
+  flex-grow: 2;
+  justify-content: flex-end;
+}
+
+.header-title {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 4;
+  font-weight: bold;
+  font-size: 40px;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 3;
+}
+
+.display-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px 30px;
+  background-color: black;
+  height: 100vh;
+  color: rgb(17, 141, 172);
 }
 
-.App-link {
-  color: #61dafb;
+.display-box {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  padding: 20px 30px;
+  background-color: black;
+  height: 100vh;
+  color: rgb(17, 141, 172);
+  position: sticky;
+  top: 200px;
+}
+
+.post-container {
+  border: 1px solid rgb(17, 141, 172);
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 4px 8px;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  outline: none;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.normal-btn {
+  background-color: #1ec24f;
+}
+
+.warning-btn {
+  background-color: red;
+}
+
+.input {
+  margin-bottom: 5px;
+  width: 200px;
+  font-size: 16px;
+  color: green;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.input-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #1ec24f;
+}
+
+.box-medium {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
 }
 
 @keyframes App-logo-spin {
