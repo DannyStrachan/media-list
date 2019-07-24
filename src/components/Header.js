@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Header(props) {
   console.log(props);
   return (
-    <div className="header">
+    <header>
       {props.user.loggedIn ? (
         <div className="header-container">
           <div className="header-title">
@@ -33,7 +33,7 @@ function Header(props) {
           </span>
         </div>
       )}
-    </div>
+    </header>
   );
 }
 
